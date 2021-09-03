@@ -1,0 +1,315 @@
+<html>
+    <head>
+        <script src="https://coding96.ru/jquery.js"></script>
+    </head>
+    
+    <body>
+    
+<div class="hat">
+	<div class="cont">
+		<div class="menu" onclick="scr(1300)">О компании</div>
+		<div class="menu" onclick="scr(700)">Преимущества</div>
+		<div class="menu" onclick="scr(100)">Скидки и акции</div>
+		<div class="menu" onclick="scr(100)">Цифровые товары</div>
+		<div class="menu" onclick="scr(100)">Отзывы</div>
+	</div>
+</div>
+
+<div class="main">
+	<div class="bb">
+		<div class="center">
+			<div class="text1">ИНТЕРНЕТ-МАГАЗИН <br> ЦИФРОВЫХ ТОВАРОВ</div><br>
+			<div class="text2">Добро пожаловать! Мы рады приветствовать вас на сайте компании,<br> которая занимается продажей цифровых товаров</div>
+			<div class="but"><br><br>
+				<button class="bt">Подробнее</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="last">
+	<div class="gf">
+		<div class="cont_im" onclick="open_box(1)">
+			<img src="onl.png" class="img">
+			<div class="podch"><u>Онлайн-доступ</u></div><br>
+			<div class="tt">Покупатель получает доступ к цифровому товару сразу же после оплаты своего заказа</div>
+		</div>
+		
+		<div class="cont_im" onclick="open_box(2)">
+			<img src="asort.png" class="img">
+			<div class="podch"><u>Широкий ассортимент</u></div><br>
+			<div class="tt">В интернет-магазине представлено большое количество цифровых товаров: от книг до ПО</div>
+		</div>
+		
+		<div class="cont_im" onclick="open_box(3)">
+			<img src="lock.png" class="img">
+			<div class="podch"><u>Доступная стоимость</u></div><br>
+			<div class="tt">В интернет-магазине любой желающий может купить цифровые товары по самым доступным ценам</div>
+		</div>
+	</div>
+</div>
+<div class="last last1">
+	<div class="gf">
+		<div class="cont_im1">
+			<div class="rekl"> Быстро, удобно, практично </div>
+			<img src="online.png" class="man">
+			<div class="rekl_txt"> 	✔ Онлайн - оплата </div>
+			<div class="rekl_txt"> 	✔ Рассрочка </div>
+			<div class="rekl_txt"> 	✔ Оплата через банк </div>
+			<div class="rekl_txt"> 	✔ Семейное использование </div>
+		</div>
+		
+		<div class="cont_im1">
+		    <div class="rekl"> У вас своя компания? Закажите у нас сайт </div>
+			<input class="inp" placeholder="Введите название сайта">
+			<input class="inp" placeholder="Введите ФИО">
+			<input class="inp" placeholder="Введите телефон">
+			<input class="inp" placeholder="Введите почту">
+			<button class="ordering" onclick="ordering()"> Заказать </button>
+		</div>
+		
+		<div class="cont_im1">
+		    <div class="rekl"> Надежная компания </div>
+			<img src="man.jpg" class="man">
+		    <div class="rekl_txt"> ✅ Работаем уже более 7 лет </div>
+		    <div class="rekl_txt"> ✅ 677 положительных отзывов </div>
+		    <div class="rekl_txt"> ✅ Проверенные товары </div>
+		    <div class="rekl_txt"> ✅ Гарантия </div>
+			
+		</div>
+	</div>
+</div>
+
+<div class="foot">
+
+</div>
+
+
+<div class="open_box" id="open_box" onclick="close_box()"></div>
+<style>
+.foot{
+height:300px;
+width:100%;
+background:#424242;
+}
+
+.tt{
+	width:95%;
+	text-align:center;
+	font-size:17px;
+	color:#333;
+	padding:0px 10px 0px 10px;
+}
+.podch{
+	width:100%;
+	text-align:center;
+	font-size: 20px;
+    margin-top: 15px;
+}
+.img{
+	margin-left: 115px;
+    margin-top: 20px;
+}
+.cont_im{
+	width: 370px;
+    height: 300px;
+    background: #eee;
+    box-shadow: 0px 0px 3px 0px grey;
+    margin-top: 90px;
+    margin-left: 23px;
+    float: left;
+}
+
+.gf{
+	width:1200px;
+	height:100%;
+	margin:auto;
+}
+.last{
+	width:100%;
+	height:500px;
+	background:#ddd;
+	border-bottom: 2px solid grey;
+}
+.last1{
+	height:700px;
+}
+.cont_im1{
+	width: 270px;
+    box-shadow: 0px 0px 3px 0px grey;
+    margin-top: 90px;
+    margin-left: 23px;
+    float: left;
+    background: #fff;
+    height: 400px;
+	padding: 50px;
+	text-align: center;
+	border-radius: 10px;
+}
+.rekl{
+	font-weight: bold;
+	font-size: 22px;
+}
+.inp{
+	width: 200px;
+	height: 40px;
+	border: 2px solid lightgrey;
+	margin-top: 27px;
+}
+.ordering{
+	width: 200px;
+	height: 40px;
+	background: #d42525;
+	border: 2px solid #a10e0e;
+	border-radius: 10px;
+	margin-top: 30px;
+	color: #bbb;
+	font-size: 18px;
+}
+.rekl_txt{
+	text-align: left;
+	margin-top: 13px;
+}
+.man{width: 270px; margin-top: 17px;}
+.bt{
+	width: 350px;
+    height: 60px;
+    line-height: 54px;
+    font-size: 20px;
+	background:#d42525;
+	border-radius:30px;
+	border:0px;
+	color:white;
+	cursor:pointer;
+}
+.bt:hover{
+	box-shadow: 0px 0px 8px #000a inset;
+}
+.but{
+	width:100%;
+	text-align:center;
+}
+.text2{
+	font-size:25px;
+	color:white;
+	text-align:center;
+	width:100%;
+	font-family: sans-serif;
+}
+.text1{
+	font-size:60px;
+	color:white;
+	font-weight:bold;
+	text-align:center;
+	width:100%;
+	font-family: sans-serif;
+}
+.center{
+	width:1200px;
+	margin:auto;
+	padding-top: 194px;
+    padding-bottom: 194px;
+}
+.bb{
+	height:100%;
+	width:100%;
+	background:#00000088;
+}
+.main{
+	background-image: url(123.jpg);
+	background-repeat:no-repeat;
+	background-size:100%;
+	height:700px;
+	width:100%;
+}
+
+body{margin:0;font-family: sans-serif;}
+.hat{
+	width:100%;
+	height:80px;
+	background:#424242;
+}
+
+.cont{
+	margin:auto;
+	width:800px;
+	height:80px;
+}
+.menu{
+	padding: 28px 23px 28px 22px;
+	text-decoration: underline;
+    float: left;
+    color: white;
+    font-size: 18px;
+    font-family: sans-serif;
+	transition: transform 0.5s;
+	cursor: pointer;
+}
+.menu:hover{
+	transform: scale(1.1);
+	text-shadow: 0px 0px 3px #aaa;
+}
+
+.open_box{
+	width: 700px;
+	height: 600px;
+	background: #fff;
+	position: fixed;
+	top: 100px;
+	left: calc(50% - 350px);
+	display: none;
+	padding: 50px;
+	border-radius: 30px;
+	box-shadow: 0px 0px 10px #000a;
+	cursor: pointer;
+}
+
+
+</style>
+
+
+
+
+<script>
+function open_box(nomer){
+$("#open_box").fadeIn();
+
+$.ajax({
+	url: 'txt'+nomer+'.txt',
+	type: 'post',
+	dataType: 'text',
+	contentType: false,
+	processData: false,
+	cache: false,
+	success: function(txt){
+		$("#open_box").html(txt);
+	}
+});
+}
+function close_box(){
+$("#open_box").fadeOut();
+}
+
+function scr(pixels){
+$('body').animate({ scrollTop: pixels }, 500);
+}
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body></html>
